@@ -177,6 +177,50 @@
  -->
 
 
+
+<!-- Methodology Section -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Our Methodology</h2>
+    <div class="columns is-multiline is-centered">
+      
+      <!-- Image 1 -->
+      <div class="column is-half has-text-centered">
+        <figure>
+          <img src="img/ppt1_03.png" alt="Step 1: Obtaining the Doctor's Demand">
+          <figcaption>After analyzing 500 AI misdiagnosis cases with director-level doctors, a key phenomenon was discovered: experienced doctors would look back at the dynamic image sequence within the previous 10 seconds when encountering suspicious lesions. The doctor specifically pointed out: "Real malignant tumors will show stable boundary characteristics and growth trends in dynamic images, while false positive lesions often show random and transient manifestation characteristics. How to transform this solution of doctors into the algorithm logic of the AI ​​model is our goal.</figcaption>
+        </figure>
+      </div>
+      
+      <!-- Image 2 -->
+      <div class="column is-half has-text-centered">
+        <figure>
+          <img src="img/ppt1_04.png" alt="Step 2: Select Key Frames">
+          <figcaption>We propose a breast cancer lesion detection algorithm based on interpretable temporal memory sequences. We first use detection2 to extract the region of interest a priori and use Self-Attention to select the key frames in the previous T frames.</figcaption>
+        </figure>
+      </div>
+      
+      <!-- Image 3 -->
+      <div class="column is-half has-text-centered">
+        <figure>
+          <img src="img/ppt1_05.png" alt="Step 3: Feature Extraction">
+          <figcaption>Then, we go back to the previous T frames. In this T->current frame, we fuse the features of the current frame, the reverse optical flow features of the current frame and each of the previous T frames, and the bounding box information. We perform temporal aggregation in an iterative form, and use Multi-head Attention to fuse these features, and finally achieve the screening of positive/false positive samples. This can improve the detection of positive samples and reduce the probability of detecting false positive samples.</figcaption>
+        </figure>
+      </div>
+      
+      <!-- Image 4 -->
+      <div class="column is-half has-text-centered">
+        <figure>
+          <img src="img/ppt1_06.png" alt="Step 4: Evaleuation Results">
+          <figcaption>Our model improves the accuracy of dynamic image recognition to 95.3%, reduces the false positive rate by 62%, and achieves fast reasoning at 31fps.</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
