@@ -123,6 +123,25 @@
 </section>
 
 
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Why we do this?</h2>
+        <div class="content has-text-justified">
+          <p>
+            In breast cancer screening in remote areas, advances in deep learning technology have significantly promoted the development of AI in the field of ultrasound breast cancer identification, but AI-assisted diagnosis of ultrasound images faces severe challenges - the false positive rate is high, and the misdiagnosis rate of existing models is as high as 28%.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -139,24 +158,6 @@
   </div>
 </section>
 <!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
 
 <!-- 
 <section class="hero is-small is-light">
@@ -183,9 +184,9 @@
     
     <!-- Image 1 -->
     <div class="columns is-centered">
-      <div class="column is-three-quarters has-text-centered">
+      <div class="column has-text-centered">
         <figure>
-          <img src="img/ppt1_03.png" alt="Step 1: Obtaining the Doctor's Demand" style="width: 100%;">
+          <img src="img/ppt1_03.png" alt="Step 1: Obtaining the Doctor's Demand">
           <figcaption>After analyzing 500 AI misdiagnosis cases with director-level doctors, a key phenomenon was discovered: experienced doctors would look back at the dynamic image sequence within the previous 10 seconds when encountering suspicious lesions. The doctor specifically pointed out: "Real malignant tumors will show stable boundary characteristics and growth trends in dynamic images, while false positive lesions often show random and transient manifestation characteristics. How to transform this solution of doctors into the algorithm logic of the AI ​​model is our goal.</figcaption>
         </figure>
       </div>
@@ -193,9 +194,9 @@
     
     <!-- Image 2 -->
     <div class="columns is-centered">
-      <div class="column is-three-quarters has-text-centered">
+      <div class="column has-text-centered">
         <figure>
-          <img src="img/ppt1_04.png" alt="Step 2: Select Key Frames" style="width: 100%;">
+          <img src="img/ppt1_04.png" alt="Step 2: Select Key Frames">
           <figcaption>We propose a breast cancer lesion detection algorithm based on interpretable temporal memory sequences. We first use detection2 to extract the region of interest a priori and use Self-Attention to select the key frames in the previous T frames.</figcaption>
         </figure>
       </div>
@@ -203,9 +204,9 @@
     
     <!-- Image 3 -->
     <div class="columns is-centered">
-      <div class="column is-three-quarters has-text-centered">
+      <div class="column has-text-centered">
         <figure>
-          <img src="img/ppt1_05.png" alt="Step 3: Feature Extraction" style="width: 100%;">
+          <img src="img/ppt1_05.png" alt="Step 3: Feature Extraction">
           <figcaption>Then, we go back to the previous T frames. In this T->current frame, we fuse the features of the current frame, the reverse optical flow features of the current frame and each of the previous T frames, and the bounding box information. We perform temporal aggregation in an iterative form, and use Multi-head Attention to fuse these features, and finally achieve the screening of positive/false positive samples. This can improve the detection of positive samples and reduce the probability of detecting false positive samples.</figcaption>
         </figure>
       </div>
@@ -213,9 +214,9 @@
     
     <!-- Image 4 -->
     <div class="columns is-centered">
-      <div class="column is-three-quarters has-text-centered">
+      <div class="column has-text-centered">
         <figure>
-          <img src="img/ppt1_06.png" alt="Step 4: Evaluation Results" style="width: 100%;">
+          <img src="img/ppt1_06.png" alt="Step 4: Evaluation Results">
           <figcaption>Our model improves the accuracy of dynamic image recognition to 95.3%, reduces the false positive rate by 62%, and achieves fast reasoning at 31fps.</figcaption>
         </figure>
       </div>
